@@ -1,0 +1,10 @@
+<!-- ngModel two-way-databinding -->
+<input type="text" class="form-control" [(ngModel)]="username" />
+<p>{{ username }}</p>
+<button 
+  class="btn btn-primary"
+  [disabled]="empty"
+  (click)="onCreateUser()"
+>Clean
+</button>
+<p> {{ userCreationStatus }}</p>
